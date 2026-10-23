@@ -16,7 +16,8 @@ Ouvrir `index.html` dans un navigateur.
 ## Auteurs
 
 - Sofiane
-- NOM DU BINÔME
+- Ismael
+- Ylan
 
 ## Dépôt GitHub
 
