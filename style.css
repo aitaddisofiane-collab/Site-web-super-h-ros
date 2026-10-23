@@ -1,0 +1,149 @@
+/* Polices personnalisées (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&display=swap');
+
+/* Couleurs du site */
+:root {
+  --fond: #0f1b2d;
+  --carte: #18294a;
+  --texte: #e8eef7;
+  --accent: #f5b301;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Couleur de fond, couleur du texte, police */
+body {
+  background-color: var(--fond);
+  color: var(--texte);
+  font-family: 'Inter', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* En-tête */
+header {
+  text-align: center;
+  padding: 3rem 1rem 1.5rem;
+  background: linear-gradient(180deg, #1d3557, var(--fond));
+}
+
+/* Titre mis en valeur */
+h1 {
+  font-family: 'Bebas Neue', Impact, sans-serif;
+  font-size: 4rem;
+  letter-spacing: 3px;
+  color: var(--accent);
+  text-shadow: 3px 3px 0 #000;
+}
+
+h2 {
+  font-family: 'Bebas Neue', Impact, sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  color: var(--accent);
+  margin: 1.5rem 0 1rem;
+}
+
+h3 {
+  font-family: 'Bebas Neue', Impact, sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.slogan {
+  font-style: italic;
+  margin: 0.5rem 0 1.5rem;
+  opacity: 0.85;
+}
+
+/* Menu de navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  color: var(--texte);
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  border: 2px solid var(--accent);
+  border-radius: 999px;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover,
+nav a.actif {
+  background: var(--accent);
+  color: var(--fond);
+}
+
+/* Contenu principal */
+main {
+  max-width: 900px;
+  margin: 1rem auto 2rem;
+  padding: 0 1rem;
+}
+
+.presentation p,
+.intro {
+  margin-bottom: 1rem;
+}
+
+.missions {
+  margin: 0 0 2rem 1.5rem;
+}
+
+.missions li {
+  margin-bottom: 0.4rem;
+}
+
+.bouton {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--fond);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+}
+
+.bouton:hover {
+  opacity: 0.85;
+}
+
+/* Cartes des héros */
+.equipe {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.carte {
+  background: var(--carte);
+  border-top: 4px solid var(--accent);
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.pouvoir {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  margin-bottom: 0.7rem;
+}
+
+/* Pied de page */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
